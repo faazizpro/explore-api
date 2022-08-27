@@ -7,5 +7,9 @@ function CreateData(){
 function CreateData2(){
     fetch('https://jsonplaceholder.typicode.com/users')
         .then( res => res.json())
-        .then(data => console.log(data));
+        .then(data => DisplayUsers(data));
+}
+
+function DisplayUsers(data){
+    console.log(data);
 }
